@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    <div class="modal_card">
+      <div class="card-body">
+        <h5 class="card-title">Thank You!</h5>
+        <p class="card-text">Cafe deleted successfully.</p>
+        <a href="{{ url_for('home') }}" class="btn btn-primary">Back to Home Page</a>
+      </div>
+    </div>
+
+{% endblock %}

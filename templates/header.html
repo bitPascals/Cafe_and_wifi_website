@@ -1,0 +1,39 @@
+
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4"><b><i>Cafe4Work</i></b></span>
+            </a>
+
+            <ul class="nav nav-pills">
+            {% if request.path == "/": %}
+              <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link active" aria-current="page">Home</a></li>
+            {% else: %}
+                <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link" aria-current="page">Home</a></li>
+            {% endif %}
+
+            {% if request.path == "/cafes": %}
+              <li class="nav-item"><a href="{{ url_for('get_all_cafes') }}" class="nav-link active">Cafes</a></li>
+            {% else: %}
+                 <li class="nav-item"><a href="{{ url_for('get_all_cafes') }}" class="nav-link">Cafes</a></li>
+            {% endif %}
+
+
+            {% if request.path == "/suggest_cafe": %}
+              <li class="nav-item"><a href="{{ url_for('suggest_cafe') }}" class="nav-link active">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                    <g fill="#0A4D68" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM21,16h-5v5c0,0.553 -0.448,1 -1,1c-0.552,0 -1,-0.447 -1,-1v-5h-5c-0.552,0 -1,-0.447 -1,-1c0,-0.553 0.448,-1 1,-1h5v-5c0,-0.553 0.448,-1 1,-1c0.552,0 1,0.447 1,1v5h5c0.552,0 1,0.447 1,1c0,0.553 -0.448,1 -1,1z"></path></g></g>
+                  </svg>
+                  Suggest Cafes</a></li>
+            {% else: %}
+            <li class="nav-item"><a href="{{ url_for('suggest_cafe') }}" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                    <g fill="#A5C9CA" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM21,16h-5v5c0,0.553 -0.448,1 -1,1c-0.552,0 -1,-0.447 -1,-1v-5h-5c-0.552,0 -1,-0.447 -1,-1c0,-0.553 0.448,-1 1,-1h5v-5c0,-0.553 0.448,-1 1,-1c0.552,0 1,0.447 1,1v5h5c0.552,0 1,0.447 1,1c0,0.553 -0.448,1 -1,1z"></path></g></g>
+                  </svg>
+                  Suggest Cafes</a></li>
+            {% endif %}
+
+              <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+
+            </ul>
+      </header>

@@ -1,0 +1,406 @@
+header{
+background-color: #0A4D68;
+}
+
+header.d-flex.flex-wrap.justify-content-center.py-3.mb-4{
+    margin: 0px 0px 0px !important;
+}
+
+.img-fluid{
+    margin-top: 0px !important;
+}
+
+.container.marketing{
+    margin: 0px 100px !important;
+}
+
+.col-lg-4{
+    text-align: center !important;
+}
+
+.py-3.my-4{
+background: #0A4D68 !important;
+}
+
+.con{
+    background: #0A4D68;
+    color: #E7F6F2;
+    padding: 0px 30px 0px 30px;
+}
+
+button.btn.btn-primary{
+    background: #A5C9CA;
+    border: none !important;
+    color: #0A4D68;
+}
+
+div.album{
+  display: block !important;
+
+}
+
+div.row.flex-lg-row-reverse.align-items-center.g-5.py-5{
+    margin: 0px, 10px, 10px 0px !important;
+    padding: 0px 0px;
+
+}
+
+.toilet_svg{
+    height: 40px !important;
+    width: 40px !important;
+    padding-top: 10px;
+
+}
+
+.perks{
+    display: flex !important;
+
+}
+
+.display-5.text-body-emphasis{
+    font-size: 30px !important;
+    color: #0A4D68 !important;
+
+
+}
+
+.explore_link{
+     text-decoration: none !important;
+}
+
+
+a.btn.btn-primary{
+    background: #0A4D68 !important;
+    border: none !important;
+    font-size: 12px !important;
+    margin-left: 850px;
+
+}
+
+div.col-lg-6{
+  padding-left: 50px !important;
+}
+
+.service{
+    display: flex !important;
+    justify-content: left;
+    padding-right: 60px;
+    margin-top: 10px !important;
+}
+
+#gray{
+    color: #B3B3B3 !important;
+}
+
+.seats{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #0A4D68;
+    display: flex !important;
+    width: 100px;
+
+}
+
+.form_data{
+    display:inline;
+}
+
+.add_forms{
+float:none;
+margin:0 auto;
+padding-top:14px;
+width:50%;
+margin-top: 20px;
+}
+
+.new_cafe{
+    float:none;
+    margin-left: 40%;
+    padding-top:14px;
+    width:50%;
+    margin-top: 20px;
+    justify-content: center !important;
+    color: #0A4D68
+
+}
+
+.form{
+    margin-bottom: 50px;
+}
+
+.new_cafe_text{
+    margin-left: 33%;
+    width:50%;
+    margin-bottom: 50px;
+    color: #0A4D68
+
+}
+
+.form-label{
+    color: #0A4D68
+}
+
+.form-select{
+    color: #0A4D68
+}
+
+.btn-primary.btn-md{
+    width: 100%;
+}
+
+.explore{
+    text-decoration: none;
+    color: #0A4D68;
+}
+
+
+a.explore:hover{
+    background: #0A4D68 !important;
+    color: #05BFDB;
+}
+
+a.explore_btn:hover{
+    background-color: #0A4D68 !important;
+    color: #05BFDB;
+}
+
+
+button.explore:hover{
+    background: #0A4D68 !important;
+    color: #05BFDB;
+}
+
+.select_btn{
+    border-radius: 6px;
+    padding: 7px !important;
+    width: 200px;
+}
+
+.btn.btn-primary{
+    background: #0A4D68 !important;
+    border: none !important;
+    margin-bottom: 2.3px !important;
+    margin-right: 40px !important;
+}
+
+.loc{
+    margin-top: 0px;
+    color:#088395;
+}
+
+
+svg#Capa_1.toilet_svg {
+    color: red !important;
+}
+
+.modal_card{
+    padding: 100px;
+}
+
+.row{
+    padding-top: 35px;
+}
+
+.element.style{
+    fill: red !important;
+}
+
+.bi.bi-plug-fil{
+  margin-left: 20px !important;
+  color: #0A4D68 !important;
+}
+
+.amenity{
+    padding-left: 20px;
+    color: #0A4D68;
+}
+
+.price_amenity{
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: #0A4D68;
+}
+
+.btn.btn-outline-danger{
+    padding: 3px, 5px !important;
+    font-size: 12px;
+}
+
+.gray_amenity{
+    padding-left: 20px;
+    color: #B3B3B3 !important;
+}
+
+.py-5{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+     padding-left: 0rem !important;
+
+}
+
+.img-fluid{
+width: 700px !important;
+height: 300px !important;
+ border-radius: 12px;
+}
+
+.section{
+   border: 2px solid #F3F3F3;
+   margin: 20px;
+   border-radius: 20px;
+}
+
+.suggest_cafe{
+    margin-left: 200px;
+    margin-top: 90px;
+    font-weight: bold;
+    color: #0A4D68;
+}
+
+.suggest_cafe_link{
+    text-decoration: none !important;
+}
+
+.suggest_cafe_link:hover{
+   background: red !important;
+}
+
+.icon_section{
+   border: 2px solid #F3F3F3;
+   margin: 20px;
+   border-radius: 20px;
+   padding: 20px;
+   display: flex;
+}
+
+
+.icon_section_link{
+    background: red !important;
+    color: red;
+}
+
+svg.bi.bi-plus-circle-fill{
+    padding: 20px !important;
+}
+
+.suggest_cafe{
+
+}
+
+.icon_selection_link hover{
+    text-decoration: none;
+}
+
+div.container.col-xxl-8.px-4.py-5{
+    margin: 0px 30px !important;
+}
+
+
+
+a.nav-link.p-0.text-body-secondary{
+    color: #E7F6F2 !important;
+}
+
+.btn.btn-primary.btn-lg.px-4.gap-3{
+    background: #A5C9CA !important;
+    border: 0px !important;
+    border: none;
+    border-radius: 8px;
+    outline: 0;
+    display: inline-block;
+    padding: 15px 25px;
+    color: #0A4D68;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #A5C9CA;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 40px;
+}
+
+.btn.btn-secondary.btn-sm{
+    background: #0A4D68;
+    color: #E7F6F2;
+}
+
+h2.pb-2.border-bottom{
+    text-align: center !important;
+}
+
+.filter{
+    margin-right: 20px !important;
+}
+
+h2.fw-normal{
+    font: 25px important;
+}
+
+.icon-square{
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.nav-link{
+    color: #E7F6F2;
+}
+
+.nav-link:hover{
+    color: #A5C9CA !important;
+}
+
+a.nav-link.active{
+    background: #A5C9CA !important;
+    color: #0A4D68 !important;
+}
+
+.fs-4{
+    color: #E7F6F2;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cafe.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  border-radius: 8px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #A5C9CA;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #395B64;
+  color: white;}
+
+
+

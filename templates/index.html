@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block title %}Cafe4work website{% endblock %}
+
+{% block content %}
+<div class="hero-image" xmlns="http://www.w3.org/1999/html">
+        <div class="hero-text">
+          <h1 style="font-size:50px">Find work Cafes close to you</h1>
+          <p>Get your job done, network and meet new people</p>
+          <a class="explore" href="{{ url_for('get_all_cafes') }}">
+          <button class="">
+            Explore
+          </button>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="container px-4 py-5" id="hanging-icons">
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Make work more fun</h3>
+                <p>Get access utilities such as <b>WIFI</b>, <b>Power</b>, <b>Sockets</b> and many more while working. It gets better and exciting.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Decide where you work</h3>
+                <p>With <b>cafe4work</b>, you get to choice which cafes to work from any location you are around the world while still getting the best service.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717
+                  0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3
+                  0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042
+                  1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1
+                  1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+               </svg>
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Connect and network</h3>
+                <p>Network, connect and meet people to collaborate with people everywhere you go to work.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">We Build On Trust</h1>
+            <p class="col-lg-8 mx-auto lead">
+              At <b>Cafe4work</b>, we have a trusted fleet of work cafe distribution all over the world. We are in collaboration with cafe owners which are
+                all physically and environmentally vetted by us. We give our clients the very best all the time.
+            </p>
+          </div>
+      </div>
+
+
+      <div class="container px-4 py-5" id="custom-cards">
+          <h2 class="pb-2 border-bottom">HOW IT WORKS</h2>
+
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/assets/images/location.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Find cafe4work at your location</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="d-flex align-items-center">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/assets/images/utilities.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Get served with great utilities</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/assets/images/connect.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Network with great people</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="container marketing">
+        <h2 class="pb-2 border-bottom">Happy Clients</h2><br/><br/>
+
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="/static/assets/images/pic.png" height="140" width="140">
+              <h2 class="fw-normal">Beth Morgan</h2>
+              <p id="para"><i>"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</i></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="/static/assets/images/man.png" height="140" width="140"><h2 class="fw-normal">Ben Franklin</h2>
+              <p><i>"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</i></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="/static/assets/images/woman.png" height="140" width="140"><h2 class="fw-normal">Cynthia Taylor</h2>
+              <p><i>"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</i></p>
+            </div><!-- /.col-lg-4 -->
+           </div><!-- /.row -->
+        </div>
+
+
+      <div class="px-4 py-5 my-5 text-center">
+        <h2 class="pb-2 border-bottom"></h2><br/><br/>
+          <h1 class="display-5 fw-bold text-body-emphasis">Get Started</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Make your days count.</p>
+            <a class="explore_link" href="{{ url_for('get_all_cafes') }}">
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Explore</button>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+{% endblock %}

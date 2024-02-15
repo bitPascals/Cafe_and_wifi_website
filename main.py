@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 
 # Creating database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cafes.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///cafes.db")
 db = SQLAlchemy()
 db.init_app(app)
 
@@ -150,5 +150,5 @@ def delete_success():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
 

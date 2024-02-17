@@ -10,6 +10,8 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+Bootstrap5(app)
+
 
 # Creating database
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///cafes.db")
@@ -57,11 +59,6 @@ class AddCafes(FlaskForm):
                         validators=[DataRequired()])
     coffee_price = StringField(label="Enter The Price of The Coffee",  validators=[DataRequired()])
     submit = SubmitField("Add Cafe")
-
-
-app.config['SECRET_KEY'] = os.environ.get("APP_CONFIG_SECRET")
-Bootstrap5(app)
-
 
 @app.route("/")
 def home():
